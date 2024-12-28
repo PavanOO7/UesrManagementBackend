@@ -14,8 +14,8 @@ public class UserController {
     @Autowired
     private UserService userService;
     @GetMapping
-    public List<UserModel> getUserDetails(){
-       return userService.getUserData();
+    public String getUserDetails(){
+       return "Hello world";
     }
     @PostMapping
     public void  createUserDetails(@RequestBody UserModel userModel){
